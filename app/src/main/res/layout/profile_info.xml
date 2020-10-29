@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subBackground"
+
+    >
+
+    <ImageButton
+        android:id="@+id/plusImgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/profile" />
+
+
+    <TextView
+        android:id="@+id/idInput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_alignLeft="@+id/nameInput"
+        android:layout_alignStart="@+id/nameInput"
+        android:layout_below="@+id/plusImgbtn"
+        android:layout_marginTop="36dp"
+        android:hint="아이디" />
+
+
+    <TextView
+        android:id="@+id/nameInput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/phoneInput"
+        android:layout_alignStart="@+id/phoneInput"
+        android:layout_below="@+id/idInput"
+
+        android:hint="이름" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/phoneInput"
+        android:layout_centerHorizontal="true"
+        android:hint="연락처"
+
+        android:layout_below="@+id/nameInput" />
+
+    <EditText
+        android:id="@+id/interest"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="관심사를 입력해주세요"
+        android:layout_below="@+id/phoneInput" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerupdatebtn"
+        android:text="회원정보수정"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/interest"/>
+
+</RelativeLayout>

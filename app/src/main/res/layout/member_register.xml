@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subBackground"
+
+    >
+
+    <ImageButton
+        android:id="@+id/plusImgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/plusicon" />
+
+
+
+    <EditText
+        android:id="@+id/idInput"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/passwordInput"
+        android:layout_alignStart="@+id/passwordInput"
+        android:layout_below="@+id/plusImgbtn"
+        android:hint="아이디" />
+
+    <Button
+        android:id="@+id/idCheckbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plusImgbtn"
+        android:text="중복체크"
+        android:layout_toEndOf="@+id/idInput"
+        android:layout_toRightOf="@+id/idInput" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/passwordInput"
+        android:layout_centerHorizontal="true"
+        android:hint="비밀번호"
+        android:layout_below="@+id/idInput" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/passwordCheckInput"
+        android:layout_centerHorizontal="true"
+        android:hint="비밀번호 확인"
+        android:layout_below="@+id/passwordInput" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/nameInput"
+        android:layout_centerHorizontal="true"
+        android:hint="이름"
+        android:layout_below="@+id/passwordCheckInput" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/phoneInput"
+        android:layout_centerHorizontal="true"
+        android:hint="연락처"
+        android:layout_below="@+id/nameInput" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerbtn"
+        android:text="회원가입"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/phoneInput"/>
+
+</RelativeLayout>

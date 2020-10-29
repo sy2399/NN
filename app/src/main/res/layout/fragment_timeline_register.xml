@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imsoyeong.neighbornetwork.TimelineRegisterFragment"
+    android:background="@color/subBackground">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/maincolor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카테고리 설정" />
+
+        <RadioGroup
+            android:id="@+id/categoryRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/categoryOption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+
+
+                android:text="안전" />
+
+            <ImageView
+                android:id="@+id/category1_img"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/category1" />
+
+            <RadioButton
+                android:id="@+id/categoryOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+
+
+                android:text="물건 공유" />
+            <ImageView
+                android:id="@+id/category2_img"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/category2" />
+
+            <RadioButton
+                android:id="@+id/categoryOption3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+
+
+                android:text="정보 공유" />
+            <ImageView
+                android:id="@+id/category3_img"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/category3" />
+        </RadioGroup>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/frame1"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@android:color/transparent"
+            android:src="@drawable/plusicon" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/frame2"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timelineTitle"
+            android:ems="30"
+            android:layout_gravity="center|top"
+            android:hint="제목을 입력해주세요"
+          />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/frame3"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/timelineContents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="30"
+            android:hint="내용을 입력해주세요"
+            android:inputType="textMultiLine" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/frame5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/frame4"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+    <RadioGroup
+            android:id="@+id/timelineRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+           >
+
+            <RadioButton
+                android:id="@+id/timelineRangeOption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/textView"
+
+                android:text="전체 공개" />
+
+
+
+            <RadioButton
+                android:id="@+id/timelineRangeOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+
+                android:text="같은 동 사람들에게만 공개" />
+
+        </RadioGroup>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/registerTimeLineBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="등록" />
+
+</RelativeLayout>

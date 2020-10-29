@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.imsoyeong.neighbornetwork">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    ​
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Regist" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchAddressActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.GeneralRegist" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MemberRegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.AdminRegist" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchAddressWebView">
+            <intent-filter>
+                <action android:name="android.intent.action.GeneralRegistWebView" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TimeLineActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.TimeLine" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProfileSettingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ProfileSetting" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProfileInfoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ProfileInfo" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProfileRangeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ProfileRange" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BarActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.Bar" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TimeLineDetailActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".NoticeDetailActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FilterActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity android:name=".UpdateContentsActivity" />
+        <activity android:name=".UpdateTimeLine" />
+        <activity android:name=".UpdateNotice"></activity>
+    </application>
+
+</manifest>

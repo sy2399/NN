@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imsoyeong.neighbornetwork.TimelineRegisterFragment"
+    android:background="@color/subBackground">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/frame1"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@android:color/transparent"
+            android:src="@drawable/plusicon" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/frame2"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timelineTitle"
+            android:ems="30"
+            android:layout_gravity="center|top"
+            android:hint="제목을 입력해주세요"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/frame3"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/timelineContents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="30"
+            android:hint="내용을 입력해주세요"
+            android:inputType="textMultiLine" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/frame4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/frame4"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:text="삭제" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/registerTimeLineBtn"
+        android:layout_alignBottom="@+id/registerTimeLineBtn"
+        android:layout_alignLeft="@+id/frame4"
+        android:layout_alignStart="@+id/frame4"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:text="수정" />
+
+</RelativeLayout>

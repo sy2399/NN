@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+<tabs>
+    <tab
+        id="@+id/tab_group"
+        icon="@drawable/group"
+        title="Group"
+        barColorWhenSelected="@color/colorAccent" />
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/home"
+        title="Home"
+        barColorWhenSelected="#5D4037" />
+    <tab
+        id="@+id/tab_notice"
+        icon="@drawable/notice"
+        title="Notice"
+        barColorWhenSelected="#7B1FA2" />
+
+</tabs>
+</PreferenceScreen>
